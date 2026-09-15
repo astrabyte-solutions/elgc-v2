@@ -1,0 +1,50 @@
+import {
+  ShieldCheck,
+  Users,
+  BadgeCheck,
+  Globe,
+  Compass,
+  Search,
+  Construction,
+  Ruler,
+  Wrench,
+  Gauge,
+  Leaf,
+  Headset,
+  Sprout,
+  Building2,
+  RefreshCcw,
+  KeyRound,
+  Target,
+  CircleDollarSign,
+  Handshake,
+  CheckCircle2,
+  type LucideIcon,
+} from "lucide-react";
+
+export const INDUSTRY_ICON_MAP: Record<string, LucideIcon> = {
+  ShieldCheck,
+  Users,
+  BadgeCheck,
+  Globe,
+  Compass,
+  Search,
+  Construction,
+  Ruler,
+  Wrench,
+  Gauge,
+  Leaf,
+  Headset,
+  Sprout,
+  Building2,
+  RefreshCcw,
+  KeyRound,
+  Target,
+  CircleDollarSign,
+  Handshake,
+  CheckCircle2,
+};
+
+export function getIndustryIcon(name: string): LucideIcon {
+  return INDUSTRY_ICON_MAP[name] ?? ShieldCheck;
+}

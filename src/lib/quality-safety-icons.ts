@@ -1,0 +1,50 @@
+import {
+  ShieldCheck,
+  ClipboardCheck,
+  Target,
+  HardHat,
+  UserCog,
+  Award,
+  Users,
+  SearchCheck,
+  AlertTriangle,
+  HeartPulse,
+  ClipboardList,
+  FileCog,
+  Search,
+  Handshake,
+  Lightbulb,
+  User,
+  BadgeCheck,
+  Shield,
+  Clock,
+  Globe,
+  type LucideIcon,
+} from "lucide-react";
+
+export const QUALITY_SAFETY_ICON_MAP: Record<string, LucideIcon> = {
+  ShieldCheck,
+  ClipboardCheck,
+  Target,
+  HardHat,
+  UserCog,
+  Award,
+  Users,
+  SearchCheck,
+  AlertTriangle,
+  HeartPulse,
+  ClipboardList,
+  FileCog,
+  Search,
+  Handshake,
+  Lightbulb,
+  User,
+  BadgeCheck,
+  Shield,
+  Clock,
+  Globe,
+};
+
+export function getQualitySafetyIcon(name: string): LucideIcon {
+  return QUALITY_SAFETY_ICON_MAP[name] ?? ShieldCheck;
+}
